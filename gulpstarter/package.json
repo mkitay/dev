@@ -1,0 +1,13 @@
+{
+  "name": "gulpstarter",
+  "version": "1.0.0",
+  "description": "gulp starter",
+  "main": "gulpfile.js",
+  "author": "Max Kitay",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}

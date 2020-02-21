@@ -1,0 +1,13 @@
+//layout
+
+.container{
+  display: grid;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 605px){
+  body{
+    background: orange;
+  }
+}//end media block

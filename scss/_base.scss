@@ -1,0 +1,108 @@
+#container{ /*A box that will contain the entire website for centering purposes*/
+	width:100%; /*The container will try to fill the entire browser window width*/
+	max-width:1000px; /*the maximum width the container will grow to*/
+	margin:0px auto; /*This line of code is the KEY.  0px margin top and bottom, auto margin left and right to center*/
+	/* background-color:rgb(225,225,225); */
+	padding:0px;
+	box-sizing:border-box;/*Makes it so that padding does not add to a box's total width*/
+
+	display:flex;
+	flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
+	flex-direction:row; /*row, row-reverse, column, column-reverse*/
+	align-content:flex-start; /*flex-start, flex-end, center, stretch, space-between, space around*/
+	align-items:stretch; /*flex-end, center, stretch, baseline*/
+}
+
+.fullwidth{
+	/* background-color:rgb(175,175,175); */
+	margin:2%;
+	width:96%;
+	padding:2%;
+	box-sizing:border-box;
+}
+
+.fullwidth1{
+	/* background-color:rgb(175,175,175); */
+	margin:2%;
+	width:96%;
+	padding:2%;
+	box-sizing:border-box;
+  text-align: center;
+}
+
+.halfwidth{
+	/* background-color:rgb(175,175,175); */
+  @include box;
+	margin:2%;
+	width:46%;
+	padding:2%;
+	box-sizing:border-box;
+}
+
+.thirdwidth{
+	/* background-color:rgb(175,175,175); */
+	margin:2%;
+	width:29.33333333%;
+	padding:2%;
+	box-sizing:border-box;
+}
+
+.quarterwidth{
+	 /*background-color:rgb(175,175,175); */
+	margin:2%;
+	width:21%;
+	padding:2%;
+	box-sizing:border-box;
+}
+
+.sixthwidth{
+	/* background-color:rgb(175,175,175); */
+	margin:2%;
+	width:12.6666666%;
+	padding:2%;
+	box-sizing:border-box;
+}
+
+.eigthwidth{
+	/* background-color:rgb(175,175,175); */
+	margin:2%;
+	width:8.5%;
+	padding:2%;
+	box-sizing:border-box;
+}
+
+body{
+  background-color: lightblue;
+}
+header{
+  @include box;
+  h1{
+    font-family: Ubuntu, helvetica, sans-serif;
+  }//h1
+}//header
+
+nav{
+  text-align: center;
+  ul{
+    margin-left: -40px;
+    li{
+      font-family: Alata, helvetica, sans-serif;
+      font-size: 2em;
+      list-style: none;
+      display: inline-block;
+      padding-right: 20px;
+      a{
+        text-decoration: none;
+        padding: 10px;
+      }//a
+      a:link, a:visited{
+        color: black;
+      }
+      a:hover, a:active{
+				@include box;
+        background: $green;
+        color: white;
+      }
+    }//li
+  }//ul
+}//nav
