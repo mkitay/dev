@@ -4,7 +4,7 @@
 }
 
 @mixin box{
-  background: $pink;
+  background: $red;
   border: solid 2px black;
   @include rounded_corner;
 }

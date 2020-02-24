@@ -9,8 +9,12 @@
 	display:flex;
 	flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
 	flex-direction:row; /*row, row-reverse, column, column-reverse*/
-	align-content:flex-start; /*flex-start, flex-end, center, stretch, space-between, space around*/
+	align-content:stretch; /*flex-start, flex-end, center, stretch, space-between, space around*/
 	align-items:stretch; /*flex-end, center, stretch, baseline*/
+	border-style: double;
+	border-radius: 15px;
+	border-color: black;
+	border-width: thick;
 }
 
 .fullwidth{
@@ -27,7 +31,18 @@
 	width:96%;
 	padding:2%;
 	box-sizing:border-box;
-  text-align: center;
+	text-align: center;
+}
+
+.fullwidth2{
+	/* background-color:rgb(175,175,175); */
+	margin:2%;
+	width:96%;
+	padding:2%;
+	box-sizing:border-box;
+	text-align: center;
+	border-style: ridge;
+	border-color: black;
 }
 
 .halfwidth{
@@ -37,6 +52,17 @@
 	width:46%;
 	padding:2%;
 	box-sizing:border-box;
+	text-align: center;
+}
+
+.halfwidth:hover{
+	/* background-color:rgb(175,175,175); */
+  @include box;
+	margin:2%;
+	width:46%;
+	padding:2%;
+	box-sizing:border-box;
+	box-shadow: 0 0 10px 10px darkblue;
 }
 
 .thirdwidth{
@@ -74,9 +100,29 @@
 body{
   background-color: lightblue;
 }
+
+h1{
+	font-family: Ubuntu, helvetica, sans-serif;
+}
+
+h2{
+	font-family: Odibee Sans, futura, sans-serif;
+	font-size: 4em;
+}
+
+h2:hover{
+	color: darkblue;
+	cursor: default;
+}
+
+p{
+	font-family: Alata, helvetica, sans-serif;
+}
+
 header{
-  @include box;
+	text-align: center;
   h1{
+		@include box;
     font-family: Ubuntu, helvetica, sans-serif;
   }//h1
 }//header
